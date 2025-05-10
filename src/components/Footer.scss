@@ -1,0 +1,100 @@
+/* Footer Styles */
+.footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 2rem 0 0 0;
+  font-family: 'Arial', sans-serif;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 1.5rem;
+  padding: 0 15px;
+}
+
+.footer-heading {
+  color: #f39c12;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-text {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  li {
+    margin-bottom: 0.5rem;
+  }
+  a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+    :hover {
+      color: #f39c12;
+    }
+  }
+}
+
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  background-color: #1a252f;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 1rem;
+  p {
+    margin: 0;
+    color: #bdc3c7;
+    font-size: 0.9rem;
+  }
+}
+.footer-social {
+  margin-top: 0.5rem;
+  a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    :hover {
+      color: #f39c12;
+    }
+  }
+}
+
+/* Font Awesome icons (if you're using it) */
+.fab {
+  display: inline-block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-section {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
