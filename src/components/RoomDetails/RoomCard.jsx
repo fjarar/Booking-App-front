@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import RoomImageSlider from "./RoomImageSlider";
-import RoomInfo from "./Roominfo";
+import RoomInfo from "./RoomInfo";
 
 import "./RoomDetails.scss";
 import { UserContext } from "../UserContext";
