@@ -2,32 +2,21 @@ import React from "react";
 import "./AllRooms.scss";
 import RoomCard from "./RoomDetails/RoomCard";
 import { useState, useEffect } from "react";
+import api from "../services/api";
 const AllRooms = () => {
   const [roomData, setRoomData] = useState([]);
 
   useEffect(() => {
-    async function fetchRoomData() {
+    const loadRooms = async () => {
       try {
-        const response = await fetch(
-          "http://localhost:8000/rooms/",
-          {
-            method: "GET",
-          }
-        );
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch room data.");
-        }
-
-        const data = await response.json(); // Parse the JSON response
-
-        console.log("Fetching successful:", data);
-        setRoomData(data);
+        const response = await api.get("rooms/");
+        setRoomData(response);
       } catch (error) {
         console.error("Error during fetch:", error);
       }
     }
-    fetchRoomData();
+    
+    loadRooms();
   }, []);
   return (
     <div className="all-rooms-container">
