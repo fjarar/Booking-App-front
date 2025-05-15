@@ -34,18 +34,20 @@
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
-  .selected {
+  &.selected {
     background: #f8b996;
   }
-  .overflow {
+  &.overflow {
     color: #777;
     background: #1a2223;
     cursor: pointer;
-    .selected {
+    &.selected {
       background: #f8b996aa;
     }
   }
 }
+
+
 
 .book-rooms-button {
   margin-top: 15px;
@@ -58,7 +60,7 @@
   font-size: 1em;
   border-radius: 5px;
   transition: 0.1s ease-in-out;
-  :hover {
+  &:hover {
     background-color: #f8b996;
     color: #101a1b;
   }
@@ -86,29 +88,29 @@
   transition: background-color 0.3s, transform 0.2s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 1rem auto;
-  :hover {
+  &:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
   }
-  :active {
+  &:active {
     background-color: #003f8a;
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
-  :disabled {
+  &:disabled {
     background-color: #cccccc;
     cursor: not-allowed;
   }
-  :focus {
+  &:focus {
     outline: 2px solid #0056b3;
     outline-offset: 2px;
   }
-  .date-switcher {
+  &.date-switcher {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    :hover {
+    &:hover {
       background-color: #f8b896b6;
     }
   }

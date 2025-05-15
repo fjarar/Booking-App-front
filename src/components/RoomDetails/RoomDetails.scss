@@ -22,10 +22,10 @@
     cursor: pointer;
     padding: 8px;
     font-size: 1.5em;
-    :first-child {
+    &:first-child {
       left: 10px;
     }
-    :last-child {
+    &:last-child {
       right: 10px;
     }
   }

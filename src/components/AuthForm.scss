@@ -23,9 +23,9 @@
   cursor: pointer;
 
   text-underline-offset: 3px;
-  :hover {
+  &:hover {
     color: #0056b3;
-    :focus {
+    &:focus {
       outline: none;
     }
   }
@@ -48,20 +48,20 @@
     font-size: 1rem;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
-    :focus {
+    &:focus {
       border-color: #007bff;
       outline: none;
     }
-    ::placeholder {
+    &::placeholder {
       color: #999;
     }
-    :invalid {
+    &:invalid {
       border-color: #ff4d4d;
       :focus {
         border-color: #ff1a1a;
       }
     }
-    :required {
+    &:required {
       background-color: #fffdfd;
     }
   }
@@ -75,10 +75,10 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    :hover {
+    &:hover {
       background-color: #0056b3;
     }
-    :disabled {
+    &:disabled {
       background-color: #cccccc;
       cursor: not-allowed;
     }
@@ -96,7 +96,7 @@
     a {
       color: #007bff;
       text-decoration: none;
-      :hover {
+      &:hover {
         text-decoration: underline;
       }
     }

@@ -29,8 +29,9 @@
   }
 }
 
-.logout
-  :hover {
+.logout {
+  &:hover {
     text-decoration: underline;
     cursor: pointer;
+  }
 }

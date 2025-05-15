@@ -44,7 +44,7 @@
     color: #bdc3c7;
     text-decoration: none;
     transition: color 0.3s;
-    :hover {
+    &:hover {
       color: #f39c12;
     }
   }
@@ -74,7 +74,7 @@
     margin: 0 10px;
     font-size: 1.2rem;
     transition: color 0.3s;
-    :hover {
+    &:hover {
       color: #f39c12;
     }
   }

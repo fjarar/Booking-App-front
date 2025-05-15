@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "projectId": "prj_sXsZOzDtcdoNvvXMn1w3luxDApyA",
+  "name": "booking-app-front-34cs",
+  "builds": [
+    {
+      "src": "*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
