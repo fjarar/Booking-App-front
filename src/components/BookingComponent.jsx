@@ -3,6 +3,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 import RoomCard from "./RoomDetails/RoomCard";
 import "./BookingComponent.scss";
+import api from "../services/api";
 
 const BookingComponent = ({ currentUser }) => {
   const [selectedDates, setSelectedDates] = useState({
@@ -21,21 +22,15 @@ const BookingComponent = ({ currentUser }) => {
   useEffect(() => {
     async function fetchRoomData() {
       try {
-        const response = await fetch(
+        /* const response = await fetch(
           "http://localhost:8000/rooms/",
           {
             method: "GET",
           }
-        );
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch room data.");
-        }
-
-        const data = await response.json(); // Parse the JSON response
-
-        console.log("Fetching successful:", data);
-        setRoomData(data);
+        ); */
+        const response = await api.get("rooms/");
+        console.log(response);
+        setRoomData(response);
       } catch (error) {
         console.error("Error during fetch:", error);
       }
